@@ -1,0 +1,93 @@
+* {
+  background-color: #243665 !important;
+  color: #f8f9fa !important;
+  font-weight: bold;
+  box-sizing: border-box !important;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.navlink {
+  font-size: 1.6rem;
+}
+
+a.nav-link.active {
+  text-decoration: underline;
+}
+
+h5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+hr {
+  width: 98%;
+  border-color: #f8f9fa;
+}
+
+footer {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Flexbox wrapper */
+.flexbox {
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 660vw;
+  Padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Each flex item */
+.item {
+  position: relative;
+  width: 33.3333%;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+}
+
+/* Media Queries */
+@media (min-width: 449px) {
+  .flexbox {
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: 680vw;
+  }
+
+  .item {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 419px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .flexbox {
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: 1400vw;
+  }
+
+  .item {
+    width: 50%;
+  }
+}
